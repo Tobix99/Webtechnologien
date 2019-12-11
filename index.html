@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="src/index.js"></script>
+  </head>
+  <body>
+    <script src="src/index.js"></script>
+    <header
+      id="header"
+      onclick="document.getElementById('headerHeadline').innerHTML = 'This is a Pride Site'"
+    >
+      <button
+        id="sidebarButton"
+        onClick='document.getElementById("sidebar").style.left="0px";document.getElementById("sidebarBlur").style.opacity="0.5";document.getElementById("sidebarBlur").style.visibility="visible";console.log("!");document.getElementById("sidebar").style.boxShadow="0px 8px 10px -5px rgba(0,0,0,0.2), 0px 16px 24px 2px rgba(0,0,0,0.14), 0px 6px 30px 5px rgba(0,0,0,0.12)";'
+      >
+        <svg
+          style="width:28px;height:28px;padding:2px;"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+        >
+          <path d="M0 0h24v24H0z" fill="none" />
+          <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+        </svg>
+      </button>
+      <h3 id="headerHeadline">
+        This is the title of the Website.
+      </h3>
+    </header>
+    <div
+      id="sidebarBlur"
+      onClick='document.getElementById("sidebar").style.left="-300px";document.getElementById("sidebarBlur").style.visibility="hidden";document.getElementById("sidebarBlur").style.opacity="0";document.getElementById("sidebar").style.boxShadow="none";console.log("?");'
+    ></div>
+
+    <aside style="z-index:4000;" id="sidebar">
+      <div id="sidebarHeadlineContainer">
+        <h1 id="sidebarHeadline">The Pride Site</h1>
+      </div>
+      <nav class="newSiteLink">Die Andere Seite</nav>
+      <nav class="newSiteLink">Die Andere Andere Seite</nav>
+      <nav class="newSiteLink">Die Andere Andere Andere Seite</nav>
+    </aside>
+    <br />
+
+    <div id="main">
+      <h1 class="headlineContent" id="demo">That is our site</h1>
+      <div id="content">
+        <div id="contentPiece1">
+          <p class="contentText" />
+          <div class="bildContainer">
+            <img
+              onload="this.parentElement.style.height='300px'"
+              class="bild"
+              src="https://picsum.photos/id/702/1000/1000"
+              alt="Bid:Bild"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <button id="upButton" onClick="document.documentElement.scrollTop = 0;">
+      <svg
+        id="buttonIcon"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+      >
+        <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z" />
+        <path d="M0 0h24v24H0z" fill="none" />
+      </svg>
+    </button>
+    <footer class="footer">
+      <a
+        href="http://www.gidf.de/"
+        style="font-size: 30px;color:unset;background-image: linear-gradient(
+        to right,
+        red,
+        orange,
+        yellow,
+        green,
+        blue,
+        indigo,
+        violet
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;text-decoration: none;"
+        >Impressum</a
+      >
+    </footer>
+  </body>
+</html>
